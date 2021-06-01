@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate #TODO change for 'validate' later on for prod/dev profile
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username:
+    password:
+  application:
+    name: openweathermap
+
+#TODO move creds externally to parameters
+api:
+  weather:
+    service-url: http://api.openweathermap.org/data/2.5/weather/
+    units: metric
+    app-id:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ["health"]
+  enabled-by-default: false
+  endpoint:
+    health:
+      enabled: true
+  #TODO configure security add tests
