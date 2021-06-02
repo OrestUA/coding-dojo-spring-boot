@@ -10,7 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 //@SpringBootTest
 public class ApplicationTests {
 
-	//TODO add  integration tests for profile integration here
+	//TODO add integration tests for profile integration here
 	@Test
 	public void contextLoads() {
 	}
