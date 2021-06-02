@@ -43,8 +43,6 @@ public class WeatherController {
 
 	//TODO add JSON sanitizer ??
 
-	//TODO add unit tests for exception handlers
-
 	//TODO add intergration test for profiles H2 and Postgress
 
 	//TODO add integration tests for repository
@@ -101,5 +99,4 @@ public class WeatherController {
 		final var weather = weatherService.findById(cityId);
 		return mapStructMapper.entityToDto(weather);
 	}
-
 }

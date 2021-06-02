@@ -26,4 +26,4 @@ management:
   endpoint:
     health:
       enabled: true
-  #TODO configure security add tests
+  #TODO configure security
